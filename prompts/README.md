@@ -26,3 +26,7 @@ Grounded in Gabarro & Kotter (mutual dependence), Cohen & Bradford (currencies),
 - Weekly digest / "Leadership Weather Report"
 - Decision log + outcome loops (revisit past calls — was my judgment right?)
 - Playbook extraction (mine the decision log + captures → propose *your* playbooks)
+
+---
+See [../docs/PRINCIPLES.md](../docs/PRINCIPLES.md) for the design rationale behind the
+capture/prep split and the two loops, and [../README.md](../README.md) for the overview.

@@ -17,7 +17,7 @@ their expectations and become more valuable over time. (See `advice-not-feedback
 2. **Blockers only they can clear** — escalations that need their leverage.
 3. **Judgment calls** — "here's my read, here's my recommendation, where do you push back?"
 
-## Prep prompt (the heart of the "second brain")
+## Prep prompt (the heart of the assistant)
 Feed: boss profile + last 1:1 notes + open commitments + this week's decisions/topics. Ask:
 > "Prep my 1:1 with [boss]. Surface: open commitments either direction, the 2–3 decisions I should
 > drive, blockers needing their leverage, and judgment calls to get their read on. Frame each in

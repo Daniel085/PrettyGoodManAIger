@@ -1,6 +1,6 @@
 # Playbooks
 
-Reusable plays. These are what turn a *generic* second brain into *your* second brain — prompts
+Reusable plays. These are what turn a *generic* assistant into *your* assistant — prompts
 pull from these so advice is grounded in real frameworks and your own way of working.
 
 Two kinds:
@@ -17,3 +17,6 @@ Two kinds:
 
 > SECURITY: you can seed from others' playbooks (EOS rocks, a coaching format, etc.), but keep
 > proprietary/customer/confidential material out of AI unless company-blessed.
+
+See [../docs/PRINCIPLES.md](../docs/PRINCIPLES.md) for how these plays map to the management
+principles (M1–M8) and [../docs/REFERENCES.md](../docs/REFERENCES.md) for sources.
