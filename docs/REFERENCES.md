@@ -41,6 +41,21 @@ Source of the **strength × warmth** model of influence — that persuasion come
 projected competence/confidence with empathy/trust, and that most people over-index on one.
 → Boss dossier: **Understand Yourself → Strength × Warmth**. Principle **M5**.
 
+## Judgment & decision-making — the decision log
+
+**Annie Duke — "Thinking in Bets"** (Portfolio, 2018) and **Daniel Kahneman — "Thinking, Fast and
+Slow"** (FSG, 2011).
+The basis for the decision log: judge **decision quality separately from outcome** (a good call can
+have a bad result — "resulting"/outcome bias); record reasoning and confidence **before** you know the
+result, because hindsight rewrites memory; and review across many decisions to **calibrate** your
+confidence. The "decision journal" practice comes from this tradition.
+→ `templates/decision-template.md`, `capture-decision.md`, `reflect-on-decisions.md`. Principle **M9**.
+
+**Architecture Decision Records (ADRs)** — the engineering convention (Michael Nygard, 2011).
+Source of the decision file *structure*: context → decision → reasoning → consequences. We adapt it
+for management calls and add an explicit pre-registered prediction + revisit date.
+→ `templates/decision-template.md`.
+
 ### Further reading (not directly encoded, but adjacent)
 - **Clay Scroggins — "How to Lead When You're Not in Charge"** — leading through influence without
   positional authority.

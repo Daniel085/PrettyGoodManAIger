@@ -86,11 +86,12 @@ versus the fragmented security postures of Copilot installs), but nothing hard-d
 a stale note; a dossier wired into a capture→prep→refine cycle is a living assistant. We optimize for the
 loop closing, not for any single artifact being perfect.
 
-**How it shows up.** Both loops are explicitly closed: report prep consumes what report capture
-produces; boss prep consumes what the profile builder produces, and the builder has a "refine mode"
-that folds post-meeting reality back in. The deferred features (decision log with outcome loops,
-playbook extraction) are all compounding mechanisms — and they're deferred precisely because they
-*can't* produce value until there's history to compound (a corollary of P2).
+**How it shows up.** Three loops are explicitly closed: report prep consumes what report capture
+produces; boss prep consumes what the profile builder produces (with a "refine mode" that folds
+post-meeting reality back in); and the decision log captures calls that `reflect-on-decisions.md` later
+grades and mines for patterns. The decision log's payoff is the slowest (months, at revisit) — a
+direct consequence of P2: it can't produce value until there's history to compound, which is also why
+**playbook extraction** stays deferred until the log has accumulated enough decisions to mine.
 
 ---
 
@@ -185,6 +186,19 @@ management is the difficult 20%: people who resist improving.
 framing; `prep-1on1.md`, which makes "discover and coach the growth edge" the implicit goal of each
 1:1 and refuses to pad when the dossier is thin.
 
+### M9. Judge decisions by their quality, not their outcome
+**The idea.** Good judgment is learnable, but only if you separate the *quality of a decision* from the
+*quality of its outcome* — a sound call can go wrong (bad luck) and a poor call can go right (good
+luck). Because hindsight silently rewrites what you "knew," the only honest way to calibrate is to
+record your reasoning and confidence *before* the result is in, then revisit. Over many decisions, the
+patterns reveal where you're over- or under-confident and what kind of call you systematically miss
+(Duke, "Thinking in Bets"; Kahneman; the decision-journal practice; ADR structure).
+
+**Where it lives.** The decision log: `templates/decision-template.md` (frozen pre-registered
+prediction + a separate, later Outcome section), `capture-decision.md` (log before you know),
+`reflect-on-decisions.md` (grade decision-quality vs. luck; surface calibration and blind spots). This
+is also the feedstock for extracting your own playbooks (P7).
+
 ---
 
 ## How the principles interact
@@ -192,6 +206,6 @@ framing; `prep-1on1.md`, which makes "discover and coach the growth edge" the im
 The system-design principles keep the tool *alive* (P1, P2) and *trustworthy* (P3, P4); the
 specialization and platform choices keep it *valuable and ownable* (P5, P6); and the whole thing only
 becomes a living assistant rather than a notes folder because of the compounding loop (P7). The
-management principles (M1–M8) are the *content* those mechanics carry — and they're drawn from
+management principles (M1–M9) are the *content* those mechanics carry — and they're drawn from
 durable, cited sources rather than one talk's hot take, which is what lets this kit be handed to a
 peer as a credible system rather than a personal hack.

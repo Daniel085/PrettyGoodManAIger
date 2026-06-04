@@ -53,12 +53,14 @@ That feedback loop is the whole point — it's what "gets smarter as you lead" a
 ## What's in the box
 
 ```
-templates/   Reusable schemas — the shape of a "dossier"
+templates/   Reusable schemas — the shape of a "dossier" / a decision
   person-dossier-template.md     A direct report (managing down)
   boss-dossier-template.md       A boss / skip-level / stakeholder (managing up)
+  decision-template.md           A single judgment call, logged before the outcome
 
 people/      One file per direct report (e.g. daniel.md)
 boss/        One file per boss / skip / key stakeholder
+decisions/   One file per meaningful judgment call (YYYY-MM-DD-slug.md)
 
 playbooks/   Reusable plays — frameworks + (eventually) your own codified moves
   synthesis-30-second-update.md  The "How's the project?" answer
@@ -71,6 +73,8 @@ prompts/     Reusable prompts you run against the files above
   prep-1on1.md           report dossier → 60-second brief        (down: payoff)
   build-boss-profile.md  email/Slack → boss dossier              (up: capture)
   prep-boss-1on1.md      boss dossier → decision-room brief       (up: payoff)
+  capture-decision.md    a judgment call → frozen decision file  (reflect: capture)
+  reflect-on-decisions.md decisions → graded verdicts + patterns  (reflect: payoff)
 
 docs/        This documentation + the architectural principles and citations
 ```
@@ -111,6 +115,8 @@ The architecture is deliberate. Each choice traces to a principle — full ratio
 - **Manage in two directions** — down (develop people) and up (mutual dependence, not flattery).
 - **Compounding is the product** — the feedback loop, not the file, is what makes this an assistant
   that gets smarter, rather than a static notes folder.
+- **Judge decisions by quality, not outcome** — log calls before the result is in, revisit to
+  calibrate your judgment honestly. This is the engine that helps *you* get better, not just organized.
 
 ---
 

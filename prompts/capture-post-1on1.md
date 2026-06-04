@@ -25,6 +25,8 @@ current dossier and my raw notes from a 1:1. Produce updates — do not rewrite 
    File these under Growth Edge / Strengths / Stakeholder context as appropriate, flagged as
    hypothesis (`[src: inference]`) vs. observation (`[src: 1:1]`).
 5. **Timeline entry** — one dated, factual append-only bullet summarizing the conversation.
+6. **Decisions made** — if I made a meaningful judgment call in this 1:1, flag it and offer to log it
+   via `capture-decision.md` (don't force it for routine calls).
 
 **Rules:**
 - Never overwrite history. Material changes to Compiled Truth keep the old claim in the Timeline.
