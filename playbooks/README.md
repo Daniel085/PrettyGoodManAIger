@@ -5,8 +5,9 @@ pull from these so advice is grounded in real frameworks and your own way of wor
 
 Two kinds:
 - **Seeded** — well-known frameworks (here, from Kline & Marsden's "managing up" talk).
-- **Yours** — codified from how *you* actually run things. Add these over time; the system can
-  also propose them by watching patterns in your decision log and 1:1 captures.
+- **Yours** — codified from how *you* actually run things. Add these by hand over time, or have
+  `../prompts/extract-playbooks.md` mine your decision log + 1:1 captures and propose them (with
+  cited evidence). Use `../templates/playbook-template.md` for the shape.
 
 | File | What it's for |
 |------|---------------|

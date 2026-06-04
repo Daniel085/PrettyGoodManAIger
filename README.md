@@ -68,6 +68,7 @@ templates/   Reusable schemas — the shape of a "dossier" / a decision
   person-dossier-template.md     A direct report (managing down)
   boss-dossier-template.md       A boss / skip-level / stakeholder (managing up)
   decision-template.md           A single judgment call, logged before the outcome
+  playbook-template.md           The shape of a play (seeded or extracted from your practice)
 
 people/      One file per direct report (e.g. daniel.md)
 boss/        One file per boss / skip / key stakeholder
@@ -87,6 +88,7 @@ prompts/     Reusable prompts you run against the files above
   capture-decision.md    a judgment call → frozen decision file  (reflect: capture)
   reflect-on-decisions.md decisions → graded verdicts + patterns  (reflect: payoff)
   weekly-digest.md       everything → Leadership Weather Report   (weekly synthesis)
+  extract-playbooks.md   your history → proposed personal plays   (compounding capstone)
 
 docs/        This documentation + the architectural principles and citations
 ```

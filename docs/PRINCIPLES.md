@@ -89,9 +89,13 @@ loop closing, not for any single artifact being perfect.
 **How it shows up.** Three loops are explicitly closed: report prep consumes what report capture
 produces; boss prep consumes what the profile builder produces (with a "refine mode" that folds
 post-meeting reality back in); and the decision log captures calls that `reflect-on-decisions.md` later
-grades and mines for patterns. The decision log's payoff is the slowest (months, at revisit) — a
-direct consequence of P2: it can't produce value until there's history to compound, which is also why
-**playbook extraction** stays deferred until the log has accumulated enough decisions to mine.
+grades and mines for patterns. `weekly-digest.md` synthesizes across all of them. The compounding peak
+is `extract-playbooks.md`: it mines accumulated history to codify *your* repeated, working moves into
+playbooks in your own voice — the point at which a generic assistant becomes specifically yours.
+Crucially, extraction is gated on data (a direct consequence of P2): it is built but designed to
+**decline honestly when history is too thin**, refusing to manufacture plausible-but-unearned advice —
+because a fabricated "personal" playbook is exactly the generic-advice failure this system exists to
+prevent.
 
 ---
 

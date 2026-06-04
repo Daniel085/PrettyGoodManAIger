@@ -42,10 +42,16 @@ who needs attention, managing-up moves, decisions due for revisit, blind-spot pa
 ruthless top-3 for next week. The home for the ~20-min Friday ritual; surfaces what the other prompts
 need you to act on.
 
-## Coming next
-- Playbook extraction (mine the decision log + captures → propose *your* playbooks) — partly enabled
-  by `reflect-on-decisions.md` pattern review
+## Compounding into your own playbooks
+| Prompt | Input | Output |
+|--------|-------|--------|
+| `extract-playbooks.md` | `decisions/` + `people/` + reflection output | proposed *personal* playbooks |
+
+The capstone: mines your real history for repeated, evidence-backed moves and codifies them as
+playbooks in your voice. Needs accumulated data — declines honestly when it's too early. Every
+proposed play must cite the specific entries where you did it. This is what makes the assistant
+*yours*, not generic.
 
 ---
 See [../docs/PRINCIPLES.md](../docs/PRINCIPLES.md) for the design rationale behind the
-capture/prep split and the two loops, and [../README.md](../README.md) for the overview.
+capture/prep split and the loops, and [../README.md](../README.md) for the overview.
