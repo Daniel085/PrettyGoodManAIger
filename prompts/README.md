@@ -32,8 +32,17 @@ Log calls *before* you know the outcome; revisit later to grade your judgment ho
 hindsight bias). Pattern review across many decisions is the feedstock for extracting *your* own
 playbooks. Decision-journal logic (Kahneman; Duke, *Thinking in Bets*) + ADR structure.
 
+## The weekly synthesis (the step-back)
+| Prompt | Input | Output |
+|--------|-------|--------|
+| `weekly-digest.md` | `people/` + `boss/` + `decisions/` + week's notes | Leadership Weather Report |
+
+Sits above the day-to-day loops. Synthesizes big from small (not a summary): the overall weather,
+who needs attention, managing-up moves, decisions due for revisit, blind-spot patterns, and a
+ruthless top-3 for next week. The home for the ~20-min Friday ritual; surfaces what the other prompts
+need you to act on.
+
 ## Coming next
-- Weekly digest / "Leadership Weather Report" (incl. surfacing decisions due for revisit)
 - Playbook extraction (mine the decision log + captures → propose *your* playbooks) — partly enabled
   by `reflect-on-decisions.md` pattern review
 

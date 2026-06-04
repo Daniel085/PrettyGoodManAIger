@@ -110,7 +110,9 @@ direct reflection of the quality of your thinking" (Kline & Marsden).
 **Where it lives.** `playbooks/synthesis-30-second-update.md` (state → trend → biggest problem →
 solution + confidence, in proper nouns and numbers, not jargon) and `playbooks/scqa-and-pyramid.md`
 (SCQA to structure thinking; the Pyramid Principle — answer first — to deliver it). Prep prompts
-enforce "decisions over reporting."
+enforce "decisions over reporting." At the system level, `weekly-digest.md` applies the same
+discipline to your whole leadership picture: a Leadership Weather Report that synthesizes and
+prioritizes rather than listing everything.
 
 ### M2. Managing up is mutual dependence, not flattery
 **The idea.** The boss relationship is one of *mutual dependence between two fallible people* — not a

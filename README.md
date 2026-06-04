@@ -33,7 +33,8 @@ and update them. The core design bet:
 
 ## The two loops
 
-The system has two halves, because you manage in two directions.
+The system has two halves, because you manage in two directions — plus a reflection loop and a weekly
+synthesis that sit on top.
 
 ### Managing down — your reports
 ```
@@ -45,8 +46,18 @@ prep-1on1  →  have the 1:1  →  capture-post-1on1  →  (dossier gets richer)
 build-boss-profile  →  prep-boss-1on1  →  have the meeting  →  refine the profile  →  sharper next time
 ```
 
-Both loops **compound**: the output of each conversation becomes input that makes the next one better.
+### Reflecting — your own judgment
+```
+capture-decision (before outcome)  →  ... time passes ...  →  reflect-on-decisions (grade + find patterns)
+```
+
+Each loop **compounds**: the output of one conversation becomes input that makes the next one better.
 That feedback loop is the whole point — it's what "gets smarter as you lead" actually means.
+
+### Synthesizing — the weekly step-back
+Once a week, `weekly-digest.md` reads across *all* of the above and gives you one **Leadership Weather
+Report**: the overall read, who needs attention, decisions due for revisit, blind-spot patterns, and a
+ruthless top-3 for the week ahead. It's where the firefighting stops and you see the whole field.
 
 ---
 
@@ -75,6 +86,7 @@ prompts/     Reusable prompts you run against the files above
   prep-boss-1on1.md      boss dossier → decision-room brief       (up: payoff)
   capture-decision.md    a judgment call → frozen decision file  (reflect: capture)
   reflect-on-decisions.md decisions → graded verdicts + patterns  (reflect: payoff)
+  weekly-digest.md       everything → Leadership Weather Report   (weekly synthesis)
 
 docs/        This documentation + the architectural principles and citations
 ```
