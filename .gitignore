@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# PRIVATE DATA — never commit real dossiers or decisions to the public repo.
+# These folders hold candid notes about real people. Keep them local only.
+# ---------------------------------------------------------------------------
+
+# All real dossiers / decisions...
+people/*
+boss/*
+decisions/*
+
+# ...EXCEPT the example, the placeholders, and any folder READMEs, so the repo
+# still ships a usable, navigable skeleton.
+!people/daniel.md          # seeded EXAMPLE (fictional) — safe to share
+!people/README.md
+!boss/.gitkeep
+!boss/README.md
+!decisions/.gitkeep
+!decisions/README.md
+
+# Common local cruft
+.DS_Store
+*.local.md

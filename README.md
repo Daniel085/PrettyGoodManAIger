@@ -97,6 +97,9 @@ docs/        This documentation + the architectural principles and citations
 
 ## How to use it (Claude / Cowork)
 
+> **Installing?** See **[docs/INSTALL.md](docs/INSTALL.md)** — clone to your laptop, open in Cowork,
+> and (important) a data-safety + employer-policy note for the private coworker notes this kit holds.
+
 1. **Seed a dossier.** For a report, copy `templates/person-dossier-template.md` to `people/<name>.md`
    and fill it (or have Claude interview you). For a boss, run `prompts/build-boss-profile.md` — it
    pulls from your **Gmail and Slack connectors** by default, with paste as a fallback.
