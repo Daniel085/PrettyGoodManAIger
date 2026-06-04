@@ -8,6 +8,10 @@ A personal AI system that makes you a better manager by remembering what you can
 > *your* boss, and *your* decisions — and it gets sharper every week, because every 1:1 and every
 > meeting feeds it.
 
+> 🚀 **First time here?** Open this folder in Cowork (or Claude Code) and say: **"Run START-HERE.md."**
+> You'll get a 1-minute overview and a walk-in to your first useful action — no need to read the rest
+> of this first. (Setup details: [docs/INSTALL.md](docs/INSTALL.md).)
+
 This kit is tuned for **Product & Design managers of individual contributors** — though the structure
 generalizes. It is a polished, shareable take on the "management second brain" idea Dave Kline &
 Marsden (MGMT Accelerator) described in a public talk — reframed here as a practical *assistant* — and

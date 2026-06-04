@@ -44,7 +44,9 @@ git check-ignore people/marcus.md   # should print the path = it's ignored = saf
 Only `people/daniel.md` (a fictional example), the folder READMEs, and `.gitkeep` placeholders are
 tracked. Everything else you create in those folders stays local.
 
-### 4. Seed your first dossier
+### 4. Let it onboard you
+The simplest start: tell Cowork **"Run START-HERE.md."** It gives a 1-minute overview, checks your
+setup, and walks you to your first action. Or seed a dossier directly:
 - **A report:** ask Cowork to copy `templates/person-dossier-template.md` to `people/<name>.md` and
   interview you to fill it (see how `people/daniel.md` was seeded).
 - **A boss:** run `prompts/build-boss-profile.md` — it pulls from your **Gmail/Slack connectors** by
