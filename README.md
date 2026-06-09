@@ -3,47 +3,57 @@
 **A personal AI assistant for product managers — a daily-ritual architecture loaded with the manage-up
 canon and a decision log.**
 
-It's not an app. It's a set of **daily rituals** (`/start`, `/sync`, `/wrap-up`), **structured files**,
-and **management playbooks** that run inside Claude Code / Cowork — so the assistant remembers what you
+Not an app. A set of **daily rituals** (`/start`, `/sync`, `/wrap-up`), **structured files**, and
+**management playbooks** that run inside Claude Code / Cowork — so the assistant remembers what you
 can't, and gets sharper the longer you use it.
 
-> The promise: instead of generic "how to manage" advice, you get advice grounded in *your* people,
-> *your* boss, and *your* decisions — and it compounds, because the daily rituals feed it whether or
-> not you remember to.
+> Instead of generic "how to manage" advice, you get advice grounded in *your* people, *your* boss, and
+> *your* decisions — and it compounds, because the daily rituals feed it whether or not you remember to.
 
-> 🚀 **First time here?** Clone this, open it in Cowork / Claude Code, and run **`/onboard`** (or say
-> "Run START-HERE.md"). You'll get a 1-minute overview, a seeded setup, and your first `/start`. Full
-> install + data-safety: [SETUP.md](SETUP.md) · [docs/PRIVACY.md](docs/PRIVACY.md).
-
-**The wedge:** there are generic personal-assistant kits, and there are management books. Few fuse the
-two for a specific role. This one does — Crist-style daily-ritual *mechanism* carrying the manage-up
-*curriculum* (Gabarro & Kotter, Cohen & Bradford, Neffinger & Kohut, Annie Duke). Tuned for **Product &
-Design managers of individual contributors**. Lineage and citations:
-[docs/PRINCIPLES.md](docs/PRINCIPLES.md) · [docs/REFERENCES.md](docs/REFERENCES.md).
+Tuned for **Product & Design managers of individual contributors**. Built on a public talk by Dave Kline
+& Marsden, the classic manage-up literature (Gabarro & Kotter; Cohen & Bradford; Neffinger & Kohut;
+Annie Duke), and the file mechanics of [COG-second-brain](https://github.com/huytieu/COG-second-brain)
+(MIT).
 
 ---
 
-## Why this exists
+## Quickstart (Claude Code / Cowork)
 
-Management context decays. Six weeks after a great 1:1 you've forgotten what you committed to, what
-your report is worried about, and why you made the call you made. So you wing it — and your AI, with
-no memory of any of it, gives you advice as generic as a search result.
+```bash
+git clone https://github.com/Daniel085/PrettyGoodManAIger.git
+cd PrettyGoodManAIger
+```
+Open the folder in Cowork / Claude Code (skills auto-load), then run **`/onboard`**. It interviews you,
+seeds a private working copy (memory + your boss dossier), helps you schedule the rituals, and runs your
+first `/start`.
 
-This system fixes that by maintaining living, private files and pairing them with prompts that read
-and update them. The core design bet:
+From there: `/start` each morning, `/sync` after lunch, `/wrap-up` at end of day — plus `/prep-1on1` and
+`/prep-boss-1on1` before meetings. **Want to see it first?** Read [A Day in the Life](docs/WALKTHROUGH.md).
+
+> ⚠️ This kit holds **candid notes about real coworkers.** Your real data lives in a separate working
+> copy, never committed. Read [docs/PRIVACY.md](docs/PRIVACY.md) and **check your employer's policy**
+> before seeding real people.
+
+---
+
+## Why it exists
+
+Management context decays. Six weeks after a great 1:1 you've forgotten what you committed to, what your
+report is worried about, and why you made the call you made. So you wing it — and your AI, with no memory
+of any of it, gives advice as generic as a search result.
+
+The core design bet:
 
 > **Capture must be cheaper than the value it returns — and it has to actually happen.**
 > Cheap capture isn't enough; something has to *trigger* it. So capture is tied to **scheduled daily
-> rituals**, not willpower. `/start`, `/sync`, `/wrap-up` fire morning/mid-day/evening and feed the
-> system whether or not you remembered. That's the difference between a living assistant and a folder
-> of files you stop opening in week three.
+> rituals**, not willpower. That's the difference between a living assistant and a folder of files you
+> stop opening in week three.
 
 ---
 
-## The daily rhythm (the heartbeat)
+## How it works
 
-Three scheduled rituals carry everything else. Set them up once with `/onboard`; they run morning,
-mid-day, and evening.
+**The heartbeat — three scheduled rituals carry everything else:**
 
 ```
 /start    morning  →  reads memory, briefs you, captures intentions, offers 1:1 prep
@@ -51,123 +61,78 @@ mid-day, and evening.
 /wrap-up  evening  →  reflects, updates memory + accomplishments, offers to log a decision
 ```
 
-This is the *mechanism*. The loops below are the *substance* the rituals carry.
+**The substance — the rituals feed four compounding loops:**
 
----
+| Loop | Capture → Payoff |
+|------|------------------|
+| **Managing down** (reports) | `capture` in `/sync` → `/prep-1on1` reads it back |
+| **Managing up** (boss) | `/build-boss-profile` → `/prep-boss-1on1`, refreshed via `/sync` |
+| **Reflecting** (judgment) | `/capture-decision` (before outcome) → `/reflect-on-decisions` (grade later) |
+| **Synthesizing** (weekly) | everything → `/weekly-digest` Leadership Weather Report |
 
-## The loops (the substance)
-
-The system has two halves, because you manage in two directions — plus a reflection loop and a weekly
-synthesis that sit on top.
-
-### Managing down — your reports
-```
-prep-1on1  →  have the 1:1  →  capture-post-1on1  →  (dossier gets richer)  →  better prep next time
-```
-
-### Managing up — your boss, skip-level, stakeholders
-```
-build-boss-profile  →  prep-boss-1on1  →  have the meeting  →  refine the profile  →  sharper next time
-```
-
-### Reflecting — your own judgment
-```
-capture-decision (before outcome)  →  ... time passes ...  →  reflect-on-decisions (grade + find patterns)
-```
-
-Each loop **compounds**: the output of one conversation becomes input that makes the next one better.
-That feedback loop is the whole point — it's what "gets smarter as you lead" actually means.
-
-### Synthesizing — the weekly step-back
-Once a week, `weekly-digest.md` reads across *all* of the above and gives you one **Leadership Weather
-Report**: the overall read, who needs attention, decisions due for revisit, blind-spot patterns, and a
-ruthless top-3 for the week ahead. It's where the firefighting stops and you see the whole field.
+Each loop compounds: the output of one conversation becomes input that makes the next one better. That
+feedback loop is what "gets smarter as you lead" actually means. Full detail in
+[docs/SKILLS.md](docs/SKILLS.md).
 
 ---
 
 ## What's in the box
 
 ```
-.claude/skills/   The slash-command runtime (Claude Code / Cowork) — auto-discovered
-  onboard, start, sync, wrap-up     daily rituals (the heartbeat)
-  prep-1on1, prep-boss-1on1         managing down / up
-  capture-decision, reflect-on-decisions
-  build-boss-profile                deep boss-dossier build from email/Slack (occasional)
-  extract-playbooks                 mine your history into your own playbooks (occasional)
-  weekly-digest
-
-templates/        Schemas copied into your working copy
-  memory, assistant-config, task-board, scratchpad, accomplishments,
-  daily-note, meeting-note         the productivity backbone
-  person-dossier, boss-dossier, decision, playbook   the management schemas
-
-playbooks/        Reusable management plays (seeded frameworks + your own, over time)
-  synthesis-30-second-update · scqa-and-pyramid · advice-not-feedback ·
-  one-on-one-as-decision-room
-
-prompts/          Same logic as the skills, as plain prompts (model-agnostic — P6)
-  capture-post-1on1 · prep-1on1 · build-boss-profile · prep-boss-1on1 ·
-  capture-decision · reflect-on-decisions · weekly-digest · extract-playbooks
-
-examples/         Fictional worked dossiers (Alex Chen PM, Sam Rivera Director, a decision)
-docs/             PRINCIPLES · REFERENCES · PRIVACY · INSTALL
-people/ boss/ decisions/   Empty skeleton — your real data is gitignored, lives in your working copy
+.claude/skills/   11 slash-command skills (auto-discovered) — see docs/SKILLS.md
+templates/        schemas: memory, task-board, scratchpad, accomplishments, daily/meeting notes,
+                  + person/boss/decision/playbook dossiers — copied into your working copy
+playbooks/        reusable management plays (seeded frameworks + your own, over time)
+prompts/          model-agnostic twins of the skills (paste into any LLM — P6)
+examples/         fictional worked dossiers (Alex Chen PM, Sam Rivera Director, a decision)
+docs/             the documentation (index below)
+people/ boss/ decisions/   empty skeleton — your real data is gitignored, lives in your working copy
 ```
 
-Your **real data lives in a separate working copy** (`~/pgmanaiger-working/`), never in this repo. See
-[SETUP.md](SETUP.md) for the architecture and [docs/PRIVACY.md](docs/PRIVACY.md) for why.
+Your **real data lives in a separate working copy** (`~/pgmanaiger-working/`), never in this repo.
 
 ---
 
-## How to use it (Claude Code / Cowork)
+## Documentation
 
-> **Installing?** See **[SETUP.md](SETUP.md)** (architecture + install) and
-> **[docs/PRIVACY.md](docs/PRIVACY.md)** (data-safety + employer-policy — important; this kit holds
-> private notes about real coworkers).
+| Doc | What it covers |
+|-----|----------------|
+| [SETUP.md](SETUP.md) | Architecture, install, the public-package-vs-working-copy model |
+| [docs/WALKTHROUGH.md](docs/WALKTHROUGH.md) | **A day in the life** — the rituals playing out, with sample output |
+| [docs/SKILLS.md](docs/SKILLS.md) | Per-skill reference: what each reads, produces, and when to run it |
+| [docs/FAQ.md](docs/FAQ.md) | Failure modes & troubleshooting — honest about where it bends |
+| [docs/PRINCIPLES.md](docs/PRINCIPLES.md) | The *why* — system-design (P1–P7) and management (M1–M9) principles |
+| [docs/REFERENCES.md](docs/REFERENCES.md) | Full bibliography and lineage |
+| [docs/PRIVACY.md](docs/PRIVACY.md) | What to keep out, data location, employer-policy, recovery |
+| [docs/INSTALL.md](docs/INSTALL.md) | Detailed install notes (Cowork + other surfaces) |
 
-1. **Onboard once.** Clone, open in Cowork, run **`/onboard`**. It interviews you, seeds your working
-   copy (memory + your boss dossier), helps you schedule the rituals, and runs your first `/start`.
-2. **Live in the rituals.** `/start` each morning, `/sync` after lunch, `/wrap-up` at end of day. They
-   keep capture cheap and current — this is what keeps the system alive.
-3. **Prep & capture around meetings.** `/prep-1on1` or `/prep-boss-1on1` before; your meeting notes get
-   swept in at the next `/sync`. Log hard calls with `/capture-decision`.
-4. **Step back.** `/weekly-digest` once a week; `/reflect-on-decisions` quarterly to grade your judgment
-   and mine your own playbooks.
-
-Not on Claude Code? Every skill has a plain-prompt twin in `prompts/` you can paste into any LLM (P6).
-
-### A note on data & privacy
-These dossiers are **private manager's notes** — candid coaching judgments by design, for you, not for
-sharing with the people described. Keep **proprietary, customer, or confidential** material out of the
-AI unless your company has blessed it, and **check your employer's policy** before seeding real people.
-Your working copy lives outside this repo and is never committed. Full detail:
-[docs/PRIVACY.md](docs/PRIVACY.md).
+New and want the fast path: **[WALKTHROUGH](docs/WALKTHROUGH.md)** → run `/onboard`. Want the deep
+understanding: **[PRINCIPLES](docs/PRINCIPLES.md)**.
 
 ---
 
 ## Design principles (the short version)
 
-The architecture is deliberate. Each choice traces to a principle — full rationale and citations in
-**[docs/PRINCIPLES.md](docs/PRINCIPLES.md)**:
+Each choice traces to a principle — full rationale and citations in
+[docs/PRINCIPLES.md](docs/PRINCIPLES.md):
 
-- **Capture cheaper than value, triggered by ritual** — cheap capture isn't enough; scheduled daily
-  rituals make it *happen*, instead of relying on willpower. This is the survival mechanism.
+- **Capture cheaper than value, triggered by ritual** — scheduled rituals make capture *happen* instead
+  of relying on willpower. The survival mechanism.
 - **Data before payoff** — a prep prompt on an empty dossier is just generic AI. Seed first.
 - **Observed vs. inferred, always separated** — never let a guess harden into a fact.
-- **Append-only history; approve, don't overwrite** — the dossier is auditable and you stay the editor.
+- **Append-only history; approve, don't overwrite** — the dossier is auditable; you stay the editor.
 - **Specialize over generalize** — a kit that knows Product/Design management beats one that serves
-  everyone blandly. Specificity is the entire value proposition.
+  everyone blandly.
 - **Manage in two directions** — down (develop people) and up (mutual dependence, not flattery).
-- **Compounding is the product** — the feedback loop, not the file, is what makes this an assistant
-  that gets smarter, rather than a static notes folder.
-- **Judge decisions by quality, not outcome** — log calls before the result is in, revisit to
-  calibrate your judgment honestly. This is the engine that helps *you* get better, not just organized.
+- **Compounding is the product** — the feedback loop, not the file, is what makes it get smarter.
+- **Judge decisions by quality, not outcome** — log calls before the result is in; calibrate honestly.
 
 ---
 
 ## Credits & lineage
 
-Built on ideas from a public talk by Dave Kline & Marsden on building a "management second brain," the foundational
-management-up literature (Gabarro & Kotter; Cohen & Bradford; Neffinger & Kohut), and the file
-mechanics of the open-source [COG-second-brain](https://github.com/huytieu/COG-second-brain) (MIT).
-Full attributions in [docs/REFERENCES.md](docs/REFERENCES.md).
+Built on ideas from a public talk by Dave Kline & Marsden on a "management second brain" (no paid course
+materials used), the foundational manage-up literature (Gabarro & Kotter; Cohen & Bradford; Neffinger &
+Kohut; Annie Duke; Barbara Minto), the daily-ritual architecture lineage (Michael Crist), and the file
+mechanics of [COG-second-brain](https://github.com/huytieu/COG-second-brain) (MIT). Full attributions in
+[docs/REFERENCES.md](docs/REFERENCES.md). Licensed MIT.
