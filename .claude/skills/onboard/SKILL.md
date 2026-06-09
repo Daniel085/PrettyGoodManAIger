@@ -57,6 +57,11 @@ Create `boss/<manager-name>.md` from `templates/boss-dossier-template.md`, popul
 user will share now — often very little, which is fine. Label thin claims `confidence: low` and tag
 sources. Do NOT invent content about their manager; capture only what they tell you.
 
+Mention the two ways it grows from here, so they don't think this thin seed is all there is:
+- **Automatically**, via `/sync` — when a meeting note has signal about the boss, it proposes updates.
+- **On demand**, via `/build-boss-profile` — a deeper build that reads recent email/Slack with the boss
+  to infer archetype, currencies, and format. Offer to run it now if they're game, or note it for later.
+
 ## 7. Schedule the rituals
 Walk them through scheduling using Claude Code **Routines** (`/schedule` or
 https://claude.ai/code/routines). Note the real constraint: Routines run on Anthropic's cloud with a

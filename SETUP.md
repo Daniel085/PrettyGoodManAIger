@@ -46,6 +46,7 @@ PrettyGoodManAIger/                  ← public package (this repo) — no real 
 │   ├── onboard, start, sync, wrap-up        (daily rituals — the heartbeat)
 │   ├── prep-1on1, prep-boss-1on1            (managing down / up)
 │   ├── capture-decision, reflect-on-decisions
+│   ├── build-boss-profile, extract-playbooks   (occasional deep builds)
 │   └── weekly-digest
 ├── prompts/                         ← same logic as skills, as plain prompts (model-agnostic, P6)
 ├── templates/                       ← schemas copied into your working copy
@@ -69,7 +70,9 @@ PrettyGoodManAIger/                  ← public package (this repo) — no real 
 - **`/wrap-up`** (evening) → updates memory + accomplishments; offers to log a decision.
 - **On demand:** `/prep-1on1`, `/prep-boss-1on1` before meetings; `/capture-decision` after a hard call.
 - **Weekly:** `/weekly-digest` — the Leadership Weather Report across everything.
-- **Quarterly:** `/reflect-on-decisions` — grade your judgment, mine your own playbooks.
+- **Quarterly:** `/reflect-on-decisions` — grade your judgment; `/extract-playbooks` to codify your moves.
+- **Occasionally:** `/build-boss-profile` — a deep boss-dossier build from email/Slack (new boss, or a
+  refresh). Routine boss updates already happen via `/sync`.
 
 Three feedback loops close: **managing down** (prep reads what capture wrote), **managing up** (boss
 prep reads the profile, refined after meetings), and **reflection** (decisions logged before the

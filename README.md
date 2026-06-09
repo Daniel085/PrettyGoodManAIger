@@ -92,6 +92,8 @@ ruthless top-3 for the week ahead. It's where the firefighting stops and you see
   onboard, start, sync, wrap-up     daily rituals (the heartbeat)
   prep-1on1, prep-boss-1on1         managing down / up
   capture-decision, reflect-on-decisions
+  build-boss-profile                deep boss-dossier build from email/Slack (occasional)
+  extract-playbooks                 mine your history into your own playbooks (occasional)
   weekly-digest
 
 templates/        Schemas copied into your working copy
