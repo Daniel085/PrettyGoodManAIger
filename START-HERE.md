@@ -1,15 +1,19 @@
 # Start Here
 
-**New to this? In Cowork (or Claude Code), just say:** *"Run START-HERE.md."*
-Claude will give you the overview below, see what state you're in, and walk you to your first useful
-action. You can return here any time you're not sure what to do next.
+**On Claude Code / Cowork, the real entry point is the `/onboard` skill — run that.** It interviews
+you, seeds your working copy, schedules the rituals, and runs your first `/start`.
+
+This file is the lightweight fallback: a quick orient-me for anyone who hasn't run `/onboard` yet, or
+who's on a surface without the skills. Say *"Run START-HERE.md"* and Claude gives the overview below,
+checks your state, and points you at the right next step (usually: go run `/onboard`).
 
 ---
 
 ## Instructions to Claude (run this when the user invokes START-HERE)
 
-You are onboarding the user to their Management Assistant. Be brief, warm, and oriented toward getting
-them to one useful action — don't dump the whole README. Do this:
+You are giving a brand-new user a quick orientation to Pretty Good Man-AI-ger. Be brief and warm. Your
+main job is to orient them and route them — **if they're on Claude Code / Cowork and haven't onboarded,
+point them to run `/onboard`, which does the real setup.** Don't duplicate onboarding here. Do this:
 
 ### 1. Give the 5-line overview
 Tell them, in your own words and concisely:
