@@ -26,9 +26,9 @@ words — don't sand off the nuance or make it sound more confident than I am.
 4. **How confident are you, and when should we revisit?** (high/med/low + a revisit date)
 
 **Then:**
-- Draft the file. Propose a `revisit` date (default ~3 months, or sooner if I gave one).
+- Draft the file. Propose a `revisit_date` (default ~3 months, or sooner if I gave one).
 - Suggest `people:` links to any reports/bosses involved (e.g. `[[daniel]]`).
-- Set `status: open`. Leave the **Outcome** section empty — never pre-fill it.
+- Set `status: pending`. Leave the **Outcome** section empty — never pre-fill it.
 - Propose a filename: `decisions/YYYY-MM-DD-<slug>.md`.
 
 **Rules:**
