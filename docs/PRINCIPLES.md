@@ -1,7 +1,8 @@
 # Architectural Principles
 
-This document explains *why* the Management Assistant is built the way it is. Every structural
-choice — the dossier schemas, the capture/prep split, the two loops, the playbooks — descends from a
+This document explains *why* Pretty Good Man-AI-ger is built the way it is. Every structural
+choice — the daily rituals, the dossier schemas, the capture/prep split, the loops, the playbooks —
+descends from a
 principle below. Principles are grouped into **system-design principles** (how the kit behaves as a
 piece of software-shaped tooling) and **management principles** (the ideas about leadership it
 encodes). Sources are cited inline and collected in [REFERENCES.md](REFERENCES.md).
@@ -48,8 +49,8 @@ prerequisite for `prep-boss-1on1.md` (payoff), and the prep prompt says so.
 
 ### P3. Separate the observed from the inferred
 **The principle.** The most dangerous failure mode of an AI memory system is laundering a guess into a
-remembered fact. Once "I think Daniel's edge is exec presence" becomes "Daniel's edge is exec
-presence," every downstream prep inherits the error with false confidence.
+remembered fact. Once "I think Alex's edge is exec presence" becomes "Alex's edge is exec presence,"
+every downstream prep inherits the error with false confidence.
 
 **How it shows up.** Every claim in a dossier carries a citation tag —
 `[src: 1:1 | 2026-06-02 | confidence: high|med|low]` — and `[src: inference]` is visually distinct

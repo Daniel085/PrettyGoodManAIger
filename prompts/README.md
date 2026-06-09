@@ -1,7 +1,9 @@
 # Prompts
 
-Reusable prompts. Each is platform-agnostic markdown — open it alongside the relevant dossier in
-Claude / Cowork and run.
+Reusable prompts — the **model-agnostic** twin of the skills in `.claude/skills/` (principle P6). On
+Claude Code / Cowork, prefer the slash-commands (`/prep-1on1`, `/capture-decision`, …); these `.md`
+files carry the same logic for pasting into ChatGPT, Gemini, or any LLM without the skills runtime.
+Open one alongside the relevant dossier and run.
 
 ## The reports loop (managing down)
 | Prompt | Input | Output |

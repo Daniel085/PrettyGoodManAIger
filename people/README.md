@@ -1,6 +1,6 @@
 # people/
 
-One dossier per direct report, e.g. `marcus.md`. Managing **down** — private coaching notes.
+One dossier per direct report, e.g. `alex-chen.md`. Managing **down** — private coaching notes.
 
 - Schema: `../templates/person-dossier-template.md`
 - Seed/update: `/sync` or `../prompts/capture-post-1on1.md` · Prep: `/prep-1on1`
