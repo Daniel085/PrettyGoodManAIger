@@ -12,17 +12,24 @@ encodes). Sources are cited inline and collected in [REFERENCES.md](REFERENCES.m
 
 ### P1. Capture must be cheaper than the value it returns
 **The principle.** A personal knowledge system survives only if the cost of feeding it is reliably
-lower than the value it gives back. A system that depends on willpower — a heroic weekly ritual —
-decays within weeks, because life eats the ritual. So every design decision is evaluated against one
-question: *does this make capture cheaper, or does it tax it?*
+lower than the value it gives back. A system that depends on willpower — "remember to capture after
+every meeting" — decays within weeks, because life eats the discipline. So every design decision is
+evaluated against one question: *does this make capture cheaper, or does it tax it?*
+
+**The mechanism: time-bound rituals, not willpower.** Cheap capture is necessary but not sufficient —
+something has to make it *happen*. The fix is to tie capture to **scheduled daily rituals** rather than
+to remembering. `/start`, `/sync`, and `/wrap-up` fire at fixed times (morning / mid-day / end-of-day);
+capture occurs because the ritual ran, not because you were disciplined that day. This is the
+daily-ritual architecture (Crist-style) grafted onto the management substance — and it is the single
+biggest reason this version survives where a prompt-library-you-must-remember-to-run does not.
 
 **How it shows up in the architecture.**
-- `capture-post-1on1.md` is designed for a ~90-second human cost: paste raw notes, the AI does the
-  extraction and structuring, you only approve.
-- The dossier templates pre-define the slots, so capture is *filling a known shape*, not authoring
-  prose.
-- `build-boss-profile.md` defaults to pulling from connectors (Gmail/Slack) rather than asking you to
-  assemble inputs by hand.
+- The three ritual skills (`/start`, `/sync`, `/wrap-up`) are the heartbeat; `/onboard` walks the user
+  through *scheduling* them (Routines), because an unscheduled ritual is back to willpower.
+- `/sync` and `capture-post-1on1` are designed for ~90-second human cost: paste/dump raw notes, the AI
+  extracts and structures, you only approve.
+- Templates pre-define the slots, so capture is *filling a known shape*, not authoring prose.
+- `build-boss-profile` defaults to pulling from connectors (Gmail/Slack) rather than hand-assembly.
 
 **Why we believe it.** The source talk is explicit that the three core moves "are not free" and
 that the cost is exactly why managers "wing it, or shortchange it, or don't do it at all"; the entire

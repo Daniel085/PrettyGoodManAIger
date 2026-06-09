@@ -29,6 +29,12 @@ deliverables of a good boss relationship (keep them informed / be dependable & h
 selectively).
 → Boss dossier: **Mutual Dependence**, **Understand Yourself**, **Their World**. Principle **M2**.
 
+**Barbara Minto — "The Pyramid Principle"** (Minto International; widely taught at McKinsey).
+Source of the **delivery** half of synthesis: lead with the answer, then supporting arguments, then
+evidence at the bottom. Pairs with SCQA (situation-complication-question-answer) for structuring the
+thinking before the telling.
+→ `playbooks/scqa-and-pyramid.md`. Principle **M1**.
+
 **Allan R. Cohen & David L. Bradford — "Influence Without Authority"** (Wiley; 2nd ed. 2005).
 Source of the **Law of Reciprocity** and the **"currencies"** model of exchange — inspiration, task,
 position, relationship, and personal currencies — for gaining cooperation where you lack formal
@@ -64,7 +70,15 @@ for management calls and add an explicit pre-registered prediction + revisit dat
 - **Robert Cialdini et al. — "The Small BIG" / "Influence"** — the behavioral-science basis for small,
   high-leverage changes in how you ask and frame.
 
-## Open-source mechanics
+## Architecture & mechanics
+
+**Michael Crist — personal-AI-assistant daily-ritual design.**
+The lineage for the **daily-ritual architecture** — the `/start`, `/sync`, `/wrap-up` rhythm backed by
+a persistent `memory.md`, task board, scratchpad, daily notes, and meeting notes. This is the
+*mechanism* that makes a knowledge system actually get used: capture is tied to scheduled, time-bound
+rituals rather than to remembering. We graft it onto the management substance — the daily rituals carry
+the manage-up canon and decision log that a generic assistant lacks.
+→ `.claude/skills/{start,sync,wrap-up,onboard}`; the productivity templates. Principle **P1**.
 
 **huytieu/COG-second-brain** — <https://github.com/huytieu/COG-second-brain> (MIT License).
 We do **not** fork it — its "people CRM" is deliberately a neutral, shareable contacts tracker, which
