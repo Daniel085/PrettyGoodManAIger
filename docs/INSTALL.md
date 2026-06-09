@@ -41,14 +41,14 @@ templates and the example. Verify it's working **before** you create any real no
 git status            # after creating people/marcus.md, it should NOT appear as a change
 git check-ignore people/marcus.md   # should print the path = it's ignored = safe
 ```
-Only `people/daniel.md` (a fictional example), the folder READMEs, and `.gitkeep` placeholders are
-tracked. Everything else you create in those folders stays local.
+Only the folder READMEs and `.gitkeep` placeholders are tracked in `people/`/`boss/`/`decisions/`;
+fictional worked examples live in `examples/`. Everything you create in those data folders stays local.
 
 ### 4. Let it onboard you
 The simplest start: tell Cowork **"Run START-HERE.md."** It gives a 1-minute overview, checks your
 setup, and walks you to your first action. Or seed a dossier directly:
 - **A report:** ask Cowork to copy `templates/person-dossier-template.md` to `people/<name>.md` and
-  interview you to fill it (see how `people/daniel.md` was seeded).
+  interview you to fill it (see `examples/example-person-dossier.md` for what a filled-in one looks like).
 - **A boss:** run `prompts/build-boss-profile.md` — it pulls from your **Gmail/Slack connectors** by
   default, with paste as a fallback.
 

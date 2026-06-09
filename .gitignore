@@ -1,16 +1,32 @@
 # ---------------------------------------------------------------------------
-# PRIVATE DATA — never commit real dossiers or decisions to the public repo.
-# These folders hold candid notes about real people. Keep them local only.
+# PRIVATE DATA — never commit real dossiers, decisions, or your working copy
+# to the public repo. These hold candid notes about real people. Local only.
 # ---------------------------------------------------------------------------
+
+# Your private working copy (the live install seeded by /onboard).
+# Keep it OUTSIDE this repo (e.g. ~/pgmanaiger-working/). If you ever nest it
+# here, this ignores it. Also ignore the common explicit names:
+pgmanaiger-working/
+working-copy/
+
+# Live working files if you run the rituals inside this repo instead of a
+# separate working copy (not recommended, but protected just in case):
+Memory/
+Daily Notes/
+Meetings/
+Task Board.md
+Scratchpad.md
+Accomplishments.md
+assistant-config.md
 
 # All real dossiers / decisions...
 people/*
 boss/*
 decisions/*
 
-# ...EXCEPT the example, the placeholders, and any folder READMEs, so the repo
-# still ships a usable, navigable skeleton.
-!people/daniel.md          # seeded EXAMPLE (fictional) — safe to share
+# ...EXCEPT the placeholders and folder READMEs, so the repo still ships a
+# usable, navigable skeleton. (Filled-in EXAMPLES live in examples/, which is
+# fictional and fully tracked.)
 !people/README.md
 !boss/.gitkeep
 !boss/README.md

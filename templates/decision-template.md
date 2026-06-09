@@ -5,7 +5,7 @@ date: "YYYY-MM-DD"
 confidence: "high | med | low"     # how sure you are it's the right call, AT THE TIME
 revisit_date: "YYYY-MM-DD"         # when to come back and grade it
 status: "pending | graded"        # pending until /reflect-on-decisions grades it
-people: []                         # link reports/bosses involved, e.g. [[daniel]]
+people: []                         # link reports/bosses involved, e.g. [[alex-chen]]
 tags: [decision]
 ---
 

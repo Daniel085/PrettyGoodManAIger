@@ -28,16 +28,17 @@ proprietary/confidential material out. Point to `docs/INSTALL.md` for detail. Do
 
 ### 3. Check what state they're in
 Look at the repo and tailor what you suggest:
-- **Look in `people/`** — is there anything besides `daniel.md` (the fictional example) and
-  `README.md`? **Check `boss/` and `decisions/`** for real content too.
+- **Look in `people/`** — is there anything besides `README.md` (it ships empty of real data)?
+  **Check `boss/` and `decisions/`** too. Fictional worked examples live in `examples/`.
 - If **only the example exists** → they're fresh. Offer the first-run paths in step 4.
 - If **real dossiers already exist** → skip the intro tone; ask what they want to do (prep an upcoming
   meeting? capture a recent one? weekly digest?) and route to the right prompt.
 
 ### 4. Offer first actions (for a fresh setup) — pick, don't lecture
 Ask which they'd like, and then actually do it:
-- **"Show me how it feels"** → run `prompts/prep-1on1.md` against `people/daniel.md` (the example) so
-  they see a real prep brief with zero setup and no real data.
+- **"Show me how it feels"** → run `/prep-1on1` (or `prompts/prep-1on1.md`) against
+  `examples/example-person-dossier.md` (Alex Chen, fictional) so they see a real prep brief with zero
+  setup and no real data.
 - **"Set up my first report"** → interview them (a few short rounds) and scaffold `people/<name>.md`
   from `templates/person-dossier-template.md`. (Confirm the policy caveat first.)
 - **"Set up my boss"** → run `prompts/build-boss-profile.md` (pulls from Gmail/Slack, or paste).

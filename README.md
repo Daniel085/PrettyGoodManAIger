@@ -74,7 +74,7 @@ templates/   Reusable schemas — the shape of a "dossier" / a decision
   decision-template.md           A single judgment call, logged before the outcome
   playbook-template.md           The shape of a play (seeded or extracted from your practice)
 
-people/      One file per direct report (e.g. daniel.md)
+people/      One file per direct report (your private data; ships empty)
 boss/        One file per boss / skip / key stakeholder
 decisions/   One file per meaningful judgment call (YYYY-MM-DD-slug.md)
 

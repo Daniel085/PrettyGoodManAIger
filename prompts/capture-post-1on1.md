@@ -3,7 +3,7 @@
 **When:** right after a 1:1 with a report. Goal: turn messy notes into dossier updates in <90 seconds
 of your time. This is the keystone — if capture is cheap, the brain stays alive.
 
-**How to run (Claude / Cowork):** open this file + the report's dossier (e.g. `people/daniel.md`),
+**How to run (Claude / Cowork):** open this file + the report's dossier (e.g. `people/<name>.md`),
 paste your raw notes where shown, and run. Review the proposed diff, then approve.
 
 ---

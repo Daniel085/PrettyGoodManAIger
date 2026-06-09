@@ -35,8 +35,8 @@ compounding`. A payoff prompt run against an empty or stale dossier produces exa
 advice the system exists to beat. So you always seed real data before expecting real value, and you
 build the capture side before leaning on the query side.
 
-**How it shows up.** We built and seeded a real report dossier (`people/daniel.md`) and the capture
-prompt *before* relying on prep. On the managing-up side, `build-boss-profile.md` (capture) is a
+**How it shows up.** The capture side (and a seeded dossier) comes before relying on prep — a worked
+example lives in `examples/example-person-dossier.md`. On the managing-up side, `build-boss-profile.md` (capture) is a
 prerequisite for `prep-boss-1on1.md` (payoff), and the prep prompt says so.
 
 ### P3. Separate the observed from the inferred

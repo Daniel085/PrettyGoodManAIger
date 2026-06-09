@@ -27,7 +27,7 @@ words — don't sand off the nuance or make it sound more confident than I am.
 
 **Then:**
 - Draft the file. Propose a `revisit_date` (default ~3 months, or sooner if I gave one).
-- Suggest `people:` links to any reports/bosses involved (e.g. `[[daniel]]`).
+- Suggest `people:` links to any reports/bosses involved (e.g. `[[alex-chen]]`).
 - Set `status: pending`. Leave the **Outcome** section empty — never pre-fill it.
 - Propose a filename: `decisions/YYYY-MM-DD-<slug>.md`.
 
