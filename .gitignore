@@ -19,6 +19,16 @@ Scratchpad.md
 Accomplishments.md
 assistant-config.md
 
+# EXCEPTION: demo/ is a fictional, pre-seeded working copy and IS tracked.
+# (Everyone in it is made up — see demo/README.md. Real data never goes there.)
+!demo/Memory/
+!demo/Daily Notes/
+!demo/Meetings/
+!demo/Task Board.md
+!demo/Scratchpad.md
+!demo/Accomplishments.md
+!demo/assistant-config.md
+
 # All real dossiers / decisions...
 people/*
 boss/*

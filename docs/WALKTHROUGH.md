@@ -6,6 +6,8 @@ and **Sam Rivera**, your director. The outputs below are **illustrative** — yo
 data — but they show the shape of what each ritual produces.
 
 > New here? Read the [README](../README.md) first for the what-and-why; this is the how-it-feels.
+> Want to *live* it instead of reading it? The [`demo/`](../demo/README.md) folder is this exact
+> scenario as a pre-seeded working copy — run the rituals against it yourself.
 
 ---
 

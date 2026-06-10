@@ -28,7 +28,9 @@ seeds a private working copy (memory + your boss dossier), helps you schedule th
 first `/start`.
 
 From there: `/start` each morning, `/sync` after lunch, `/wrap-up` at end of day — plus `/prep-1on1` and
-`/prep-boss-1on1` before meetings. **Want to see it first?** Read [A Day in the Life](docs/WALKTHROUGH.md).
+`/prep-boss-1on1` before meetings. **Want to see it first?** Read [A Day in the Life](docs/WALKTHROUGH.md),
+or kick the tires with zero setup against the pre-seeded fictional [demo working copy](demo/README.md):
+say *"Run `/start` using `demo/` as the working copy."*
 
 > ⚠️ This kit holds **candid notes about real coworkers.** Your real data lives in a separate working
 > copy, never committed. Read [docs/PRIVACY.md](docs/PRIVACY.md) and **check your employer's policy**
@@ -85,6 +87,7 @@ templates/        schemas: memory, task-board, scratchpad, accomplishments, dail
 playbooks/        reusable management plays (seeded frameworks + your own, over time)
 prompts/          model-agnostic twins of the skills (paste into any LLM — P6)
 examples/         fictional worked dossiers (Alex Chen PM, Sam Rivera Director, a decision)
+demo/             a pre-seeded fictional WORKING COPY — run the rituals against it, zero setup
 docs/             the documentation (index below)
 people/ boss/ decisions/   empty skeleton — your real data is gitignored, lives in your working copy
 ```
