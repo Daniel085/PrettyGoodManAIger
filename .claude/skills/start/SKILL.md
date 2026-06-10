@@ -19,15 +19,18 @@ Do this in order:
    loudly or nag.
 4. **Create today's daily note** from `templates/daily-note-template.md` if it doesn't exist yet
    (`Daily Notes/YYYY-MM-DD.md`).
-5. **Present "this morning's briefing" — a 5-line SYNTHESIS, not a summary** (apply the synthesis
+5. **Glance at unprocessed sources** — if `Scratchpad.md` has items or `Meetings/` has notes newer than
+   the last sync, fold anything urgent into the briefing (flagged as unswept) and add a one-line
+   heads-up: "N unprocessed items — worth a /sync." Don't process them here; that's /sync's job.
+6. **Present "this morning's briefing" — a 5-line SYNTHESIS, not a summary** (apply the synthesis
    playbook: proper nouns and numbers, not vibes):
    - Top 3 priorities today.
    - The biggest unresolved decision.
    - Who needs attention today.
    - Any prep needed for today's 1:1s.
    - Anything overdue or slipping.
-6. **Ask the user to set today's intentions.** Capture them in the daily note.
-7. **If today has a 1:1** with a report or the boss, offer to run `/prep-1on1` or `/prep-boss-1on1`.
+7. **Ask the user to set today's intentions.** Capture them in the daily note.
+8. **If today has a 1:1** with a report or the boss, offer to run `/prep-1on1` or `/prep-boss-1on1`.
 
 **Rules:** Synthesize — if you list everything, you've surfaced nothing. Be honest when data is thin
 (a quiet morning is a short briefing). Distinguish what you know from what you're inferring.

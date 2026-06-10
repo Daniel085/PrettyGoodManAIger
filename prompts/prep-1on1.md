@@ -39,3 +39,5 @@ guess. Produce a tight brief I can read in 60 seconds.
 - Report: `<path to dossier, e.g. people/<name>.md — or examples/example-person-dossier.md to try it>`
 - Playbooks to apply (optional): `<e.g. playbooks/advice-not-feedback.md>`
 - Anything new since last capture: `<optional one-liner>`
+- Unprocessed notes to sweep (optional): `<scratchpad / recent meeting notes — fresh signal about this
+  person often sits there before it's filed; fold it in flagged [unswept]>`

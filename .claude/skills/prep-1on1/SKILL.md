@@ -10,6 +10,10 @@ You are the user's chief of staff prepping them for a 1:1 with a direct report. 
 infer from today's calendar), read `people/<name>.md`, and attach any playbooks they name. Ground
 everything in what's recorded; flag guesses. (Full reference: `prompts/prep-1on1.md`.)
 
+**Also sweep unprocessed sources for this person** — check `Scratchpad.md` and any `Meetings/` notes
+newer than the dossier's last update for mentions of them. Fresh signal often sits there before /sync
+files it (a recruiter ping, a visible win, new friction). Fold it into the brief, flagged `[unswept]`.
+
 Produce a brief they can read in 60 seconds:
 1. **One-line read** — where this person is right now.
 2. **Open commitments (both directions)** — flag anything the user owes that's slipping. Never let a

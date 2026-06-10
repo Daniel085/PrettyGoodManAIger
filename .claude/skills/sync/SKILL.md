@@ -12,8 +12,9 @@ piled up so nothing rots. Runs in their **working copy**.
 Do this in order:
 
 1. **Process `Scratchpad.md`.** Every item gets one of three fates: assigned to the Task Board, turned
-   into a memory entry, or deleted. The scratchpad should be near-empty when you finish. Show the user
-   what you did with each.
+   into a memory entry, or deleted. (A fourth, implicit: if an item duplicates something already on the
+   Task Board or in a dossier, drop it and say so — dedupe, don't double-track.) The scratchpad should
+   be near-empty when you finish. Show the user what you did with each.
 2. **Process new `Meetings/` entries since last sync.** Extract action items, surface decisions, and
    flag anything that's coaching-relevant signal about a report or the boss.
 3. **Update the Task Board** — move items across Up Next ↔ In Progress ↔ Completed.
